@@ -1,7 +1,6 @@
 const inpunts = document.querySelectorAll('.controls input');
 
 function handleValues () {
-  console.log(this.name)
   const sufijo = this.dataset.sizing || '';
   document.documentElement.style.setProperty(`--${this.name}`, `${this.value}${sufijo}`)
 };
